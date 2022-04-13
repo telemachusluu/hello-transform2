@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: hello-telemachus
 spec:
-  replicas: 3
+  replicas: 4
   selector:
     matchLabels:
       app: hello-telemachus
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
 #        - image: 'telemachusluu/transform1:${parameters["tag"]}'
-        - image: 'telemachusluu/transform1:wednesday
+        - image: 'telemachusluu/transform1:wednesday'
           name: primary
           ports:
             - containerPort: 80
