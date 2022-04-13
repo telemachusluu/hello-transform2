@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: hello-telemachus
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: hello-telemachus
+  template:
+    metadata:
+      labels:
+        app: hello-telemachus
+    spec:
+      containers:
+ #     - image: 'telemachusluu/nginx:${parameters["tag"]}'
+      - image: 'telemachusluu/nginx:thursday'
+        name: primary
+        ports:
+        - containerPort: 80
+          protocol: TCP

@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-telemachus
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: hello-telemachus
+  template:
+    metadata:
+      labels:
+        app: hello-telemachus
+        lb: hello-telemachus
+    spec:
+      containers:
+#        - image: 'telemachusluu/nginx:${parameters["tag"]}'
+        - image: 'telemachusluu/nginx:wednesday
+          name: primary
+          ports:
+            - containerPort: 80

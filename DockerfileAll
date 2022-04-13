@@ -1,0 +1,20 @@
+FROM telemachusluu/transform1:monday
+RUN echo '<h1>Hello Transform2022 Audience, thank you for attending secure pipelines. You are seeing version Monday of this image</h1>' > /usr/share/nginx/html/index.html
+
+FROM telemachusluu/transform1:tuesday
+RUN echo '<h1>Hello Transform2022 Audience, thank you for attending secure pipelines. You are seeing version Tuesday of this image</h1>' > /usr/share/nginx/html/index.html
+
+FROM telemachusluu/transform1:wednesday
+RUN echo '<h1>Hello Transform2022 Audience, thank you for attending secure pipelines. You are seeing version Wednesday of this image</h1>' > /usr/share/nginx/html/index.html
+
+FROM telemachusluu/transform1:thursday
+RUN echo '<h1>Hello Transform2022 Audience, thank you for attending secure pipelines. You are seeing version Thursday of this image</h1>' > /usr/share/nginx/html/index.html
+
+FROM telemachusluu/transform1:friday
+RUN echo '<h1>Hello Transform2022 Audience, thank you for attending secure pipelines. You are seeing version Friday of this image</h1>' > /usr/share/nginx/html/index.html
+
+FROM telemachusluu/transform1:saturday
+RUN echo '<h1>Hello Transform2022 Audience, thank you for attending secure pipelines. You are seeing version Saturday of this image</h1>' > /usr/share/nginx/html/index.html
+
+FROM telemachusluu/transform1:sunday
+RUN echo '<h1>Hello Transform2022 Audience, thank you for attending secure pipelines. You are seeing version Sunday of this image</h1>' > /usr/share/nginx/html/index.html
