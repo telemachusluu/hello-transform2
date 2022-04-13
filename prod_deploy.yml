@@ -14,8 +14,8 @@ spec:
         lb: hello-telemachus
     spec:
       containers:
-#        - image: 'telemachusluu/nginx:${parameters["tag"]}'
-        - image: 'telemachusluu/nginx:wednesday
+#        - image: 'telemachusluu/transform1:${parameters["tag"]}'
+        - image: 'telemachusluu/transform1:wednesday
           name: primary
           ports:
             - containerPort: 80
