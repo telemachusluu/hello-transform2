@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-telemachus
+  name: hello-transform
 spec:
   replicas: 4
   selector:
     matchLabels:
-      app: hello-telemachus
+      app: hello-transform
   template:
     metadata:
       labels:
-        app: hello-telemachus
-        lb: hello-telemachus
+        app: hello-transform
+        lb: hello-transform
     spec:
       containers:
 #        - image: 'telemachusluu/transform1:${parameters["tag"]}'
