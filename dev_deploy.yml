@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: hello-telemachus
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: hello-telemachus
