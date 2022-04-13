@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
 #        - image: 'telemachusluu/transform1:${parameters["tag"]}'
-        - image: 'telemachusluu/transform1:wednesday
+        - image: 'telemachusluu/transform1:wednesday'
           name: primary
           ports:
             - containerPort: 80
