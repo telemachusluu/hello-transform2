@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-transform
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-transform
+  template:
+    metadata:
+      labels:
+        app: hello-transform
+        lb: hello-transform
+    spec:
+      containers:
+        - image: 'telemachusluu/transform1:basic'
+          name: primary
+          ports:
+            - containerPort: 80
