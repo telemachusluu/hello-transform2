@@ -14,7 +14,7 @@ spec:
         lb: hello-transform
     spec:
       containers:
-        - image: 'telemachusluu/transform1:tuesday'
+        - image: 'telemachusluu/transform1:basic'
           name: primary
           ports:
             - containerPort: 80
